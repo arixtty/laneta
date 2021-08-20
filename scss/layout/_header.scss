@@ -1,0 +1,23 @@
+.header {
+  color: #F0F0F0;
+
+  &__menu-caption {
+    color: #F0F0F0;
+    font-family: Italiana, serif;
+  }
+  &__nav-toggler {
+    border: none;
+  }
+
+  
+}
+.navbar-caption {
+  font-family: Italiana, serif;
+  font-size: 16px;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url('/assets/icon-menu.svg');
+  height: 45px;
+  width: 45px;
+}

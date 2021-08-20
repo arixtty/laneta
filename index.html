@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italiana&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Laneta</title>
+  </head>
+  <body>
+    <header class="header position-absolute start-0 end-0">
+      <nav class="navbar navbar-dark header__nav">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="assets/laneta-logo.svg" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler header__nav-toggler text-white"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-caption me-4">Menu</span>
+            <span class="navbar-toggler-icon nav-toggler-icon"></span>
+          </button>
+          <div
+            class="
+              offcanvas offcanvas-start
+              text-center
+              justify-content-center
+              header__offcanvas
+            "
+            tabindex="-1"
+            id="offcanvasNavbar"
+          >
+            <div
+              class="
+                offcanvas-body
+                d-flex
+                flex-column
+                justify-content-center
+                header__offcanvas-body
+              "
+            >
+              <ul class="navbar-nav justify-content-center flex-grow-1">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Offers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact us</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav justify-content-center flex-grow-1">
+                <li class="heading-4 heading--inverted">Sign in</li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Login</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav justify-content-center flex-grow-1">
+                <li class="heading-4 heading--inverted">Sign Up</li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Customer</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Partner</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="container-fluid d-flex flex-column justify-content-center hero"
+      >
+        <div class="container hero__contents">
+          <div class="row">
+            <h1 class="col-lg-7 col-md-8 heading-1 heading--inverted">
+              Luxury has never been so rewarding
+            </h1>
+          </div>
+          <div class="row">
+            <p class="col-lg-5 col-md-7 hero__subheading">
+              The next generation luxury loyalty program that rewards real
+              cashback, with no strings attached
+            </p>
+          </div>
+          <div class="row m-0">
+            <a href="#sectionRegistration" id="scrollButton" class="btn-primary"
+              >Join Our Community</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="container features">
+        <div class="row">
+          <div class="col">
+            <h4 class="heading-4">01</h4>
+            <h3 class="heading-3">Simple to use</h3>
+            <p>
+              Your details are protected by undreakable bank-level security.
+            </p>
+          </div>
+          <div class="col">
+            <h4 class="heading-4">02</h4>
+            <h3 class="heading-3">Prestigious</h3>
+            <p>
+              Your details are protected by undreakable bank-level security.
+            </p>
+          </div>
+          <div class="col">
+            <h4 class="heading-4">03</h4>
+            <h3 class="heading-3">Secure</h3>
+            <p>
+              Your details are protected by undreakable bank-level security.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container categories">
+        <div
+          id="categoriesCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="false"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/slide-1.png" class="d-block w-100" alt="..." />
+              <div
+                class="carousel-caption d-flex flex-column align-items-center"
+              >
+                <h2 class="heading-2 heading--inverted">Aviation</h2>
+                <a href="#" class="btn-primary">Learn More</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/slide-2.png" class="d-block w-100" alt="..." />
+              <div
+                class="carousel-caption d-flex flex-column align-items-center"
+              >
+                <h2 class="heading-2 heading--inverted">Resorts</h2>
+                <a href="#" class="btn-primary">Learn More</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/slide-3.png" class="d-block w-100" alt="..." />
+              <div
+                class="carousel-caption d-flex flex-column align-items-center"
+              >
+                <h2 class="heading-2 heading--inverted">Golf</h2>
+                <a href="#" class="btn-primary">Learn More</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/slide-4.png" class="d-block w-100" alt="..." />
+              <div
+                class="carousel-caption d-flex flex-column align-items-center"
+              >
+                <h2 class="heading-2 heading--inverted">Retail</h2>
+                <a href="#" class="btn-primary">Learn More</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/slide-5.png" class="d-block w-100" alt="..." />
+              <div
+                class="carousel-caption d-flex flex-column align-items-center"
+              >
+                <h2 class="heading-2 heading--inverted">Transport</h2>
+                <a href="#" class="btn-primary">Learn More</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/slide-6.png" class="d-block w-100" alt="..." />
+              <div
+                class="carousel-caption d-flex flex-column align-items-center"
+              >
+                <h2 class="heading-2 heading--inverted">Wellness</h2>
+                <a href="#" class="btn-primary">Learn More</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/slide-7.png" class="d-block w-100" alt="..." />
+              <div
+                class="carousel-caption d-flex flex-column align-items-center"
+              >
+                <h2 class="heading-2 heading--inverted">Events</h2>
+                <a href="#" class="btn-primary">Learn More</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/slide-7.png" class="d-block w-100" alt="..." />
+              <div
+                class="carousel-caption d-flex flex-column align-items-center"
+              >
+                <h2 class="heading-2 heading--inverted">SuperYachts</h2>
+                <a href="#" class="btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <ul
+            class="
+              carousel-indicators
+              justify-content-between
+              align-items-center
+              flex-wrap
+            "
+          >
+            <li
+              data-bs-target="#categoriesCarousel"
+              data-bs-slide-to="0"
+              class="carousel-indicator active"
+              aria-current="true"
+              aria-label="Slide 1"
+            >
+              Aviation
+            </li>
+            <li
+              data-bs-target="#categoriesCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+              class="carousel-indicator"
+            >
+              Resorts
+            </li>
+            <li
+              data-bs-target="#categoriesCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+              class="carousel-indicator"
+            >
+              Golf
+            </li>
+            <li
+              data-bs-target="#categoriesCarousel"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+              class="carousel-indicator"
+            >
+              Retail
+            </li>
+            <li
+              data-bs-target="#categoriesCarousel"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+              class="carousel-indicator"
+            >
+              Transport
+            </li>
+            <li
+              data-bs-target="#categoriesCarousel"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+              class="carousel-indicator"
+            >
+              Wellness
+            </li>
+            <li
+              data-bs-target="#categoriesCarousel"
+              data-bs-slide-to="6"
+              aria-label="Slide 7"
+              class="carousel-indicator"
+            >
+              Events
+            </li>
+            <li
+              data-bs-target="#categoriesCarousel"
+              data-bs-slide-to="7"
+              aria-label="Slide 8"
+              class="carousel-indicator"
+            >
+              SuperYachts
+            </li>
+          </ul>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#categoriesCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#categoriesCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="details">
+        <div class="containter-fluid details__how">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 offset-5">
+                <h4 class="heading-4">How it works</h4>
+                <h2 class="heading-2 mb-4">
+                  Get inspired with our exclusive luxury partners
+                </h2>
+              </div>
+            </div>
+            <div class="row">
+              <p class="col-4 offset-6 mt-3">
+                Browse our that showcase luxury brands, services and
+                experiences. From there you will connect directly with the brand
+                for all bookings and purchases for your convenience. Laneta is
+                designed for all your personal and corporate needs.
+              </p>
+            </div>
+          </div>
+          <img
+            src="assets/details-1.png"
+            alt="Photo with relaxing mood"
+            class="details__how-img"
+          />
+        </div>
+
+        <div class="containter-fluid details__about">
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <h4 class="heading-4">About</h4>
+                <h2 class="heading-2 mb-4">
+                  Laneta's loyalty program is unrivalled
+                </h2>
+              </div>
+            </div>
+            <div class="row flex-column">
+              <p class="col-5 offset-2 mt-3">
+                Laneta is an elite community of luxury brands that understand
+                the importance of loyal customers.
+              </p>
+              <p class="col-5 offset-2 mt-3">
+                Whether it is a single purchase or an experience that requires
+                end to end solutions our loyalty program will connect you with
+                trusted brands to achieve your goals.
+              </p>
+              <button class="btn-primary offset-2 mt-5">Sign Up</button>
+            </div>
+          </div>
+          <img
+            src="assets/details-2.png"
+            alt="Photo with relaxing mood"
+            class="details__about-img-1"
+          />
+          <img
+            src="assets/details-3.png"
+            alt="Photo with relaxing mood"
+            class="details__about-img-2"
+          />
+        </div>
+
+        <div class="containter-fluid details__security">
+          <div class="container">
+            <div class="row">
+              <div class="col-8">
+                <h4 class="heading-4">Security</h4>
+                <h2 class="heading-2">
+                  Laneta is serious about security and protecting you
+                </h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6 offset-6 ps-0">
+                <h4 class="heading-4">01</h4>
+                <h6 class="heading-6">Your data</h6>
+                <p>
+                  Your data is not for sale. We will never sell you data to
+                  businesses or third parties. We reveal none of your account
+                  details to partners when you transact, and our platform is
+                  air-tight.
+                </p>
+                <h4 class="heading-4">02</h4>
+                <h6 class="heading-6">Your bank card information</h6>
+                <p>
+                  We do not store any banking information on our site. We have
+                  partnered with Yodlee who are leaders in secure hosting that
+                  uses bank-grade security and data encryption services.
+                </p>
+                <h4 class="heading-4">03</h4>
+                <h6 class="heading-6">Your cashback wallet</h6>
+                <p>
+                  We use bank-level security (256-bit encryption) to ensure your
+                  information and your cashback wallet is secure and safe.
+                </p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="assets/details-4.png"
+            alt="Photo with relaxing mood"
+            class="details__security-img"
+          />
+        </div>
+      </section>
+
+      <section class="registration" id="sectionRegistration">
+        <div class="row d-flex justify-content-center">
+          <div class="registration__group col-10 col-lg-4">
+            <h4 class="heading-4">Sign Up</h4>
+            <h2 class="heading-2 heading--inverted">Registration</h2>
+            <form class="form">
+              <div class="mb-3">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Name"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="input-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="input-group">
+                  <input
+                    id="password"
+                    type="password"
+                    class="form-control rounded password-input"
+                    required
+                    placeholder="Password"
+                  />
+
+                  <svg
+                    class="icon-toggle-password icon-lock"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M16.5 8.5H3.5V18.5H16.5V8.5Z" stroke="#999999" />
+                    <path
+                      d="M6.5 8V4.88C6.5 3.01 8.07 1.5 10 1.5C11.93 1.5 13.5 3.01 13.5 4.88V8"
+                      stroke="#999999"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="input-group">
+                  <input
+                    id="password-confirm"
+                    type="password"
+                    class="form-control rounded password-input"
+                    required
+                    placeholder="Password Confirm"
+                  />
+                  <svg
+                    class="icon-toggle-password"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M16.5 8.5H3.5V18.5H16.5V8.5Z" stroke="#999999" />
+                    <path
+                      d="M6.5 8V4.88C6.5 3.01 8.07 1.5 10 1.5C11.93 1.5 13.5 3.01 13.5 4.88V8"
+                      stroke="#999999"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <a href="#" class="registration__link">Have an account?</a>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="container">
+          <h4 class="heading-4">FAQ</h4>
+          <h2 class="heading-2">We thought you might have questions</h2>
+          <div class="accordion accordion-flush" id="accordion">
+            <div class="accordion-item">
+              <h5 class="accordion-header heading-5" id="flush-headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  How can i sign up?
+                </button>
+              </h5>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordion"
+              >
+                <div class="accordion-body">
+                  Go to the sign up page, enter your name, email and link your
+                  payment card. This process only needs to be completed once and
+                  it only takes a few moments to complete.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h5 class="accordion-header heading-5" id="flush-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  Is membership available internationally?
+                </button>
+              </h5>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordion"
+              >
+                <div class="accordion-body">
+                  Go to the sign up page, enter your name, email and link your
+                  payment card. This process only needs to be completed once and
+                  it only takes a few moments to complete.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h5 class="accordion-header heading-5" id="flush-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  Can I see the full list of benefits?
+                </button>
+              </h5>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordion"
+              >
+                <div class="accordion-body">
+                  Go to the sign up page, enter your name, email and link your
+                  payment card. This process only needs to be completed once and
+                  it only takes a few moments to complete.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a class="footer__logo" href="#">
+          <img src="assets/laneta-logo.svg" alt="Logo" />
+        </a>
+
+        <ul class="social d-flex m-0">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.3 13H17.68L18.2 9.10005H14.3V6.89005C14.3 5.72005 14.56 4.94005 16.25 4.94005H18.2V1.43005C17.81 1.43005 16.9 1.30005 15.47 1.30005C12.48 1.30005 10.4 3.12005 10.4 6.50005V9.10005H7.15002V13H10.4V23.4H14.3V13Z"
+                  fill="#F0F0F0"
+                  fill-opacity="0.5"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.50098 23.2571V9.3211H2.87298V23.2571H7.50098ZM5.18698 7.4231C6.79898 7.4231 7.81298 6.3571 7.81298 5.0181C7.78698 3.6401 6.81198 2.6001 5.22598 2.6001C3.63998 2.6001 2.59998 3.6401 2.59998 5.0051C2.59998 6.3441 3.60098 7.4101 5.16098 7.4101H5.18698V7.4231Z"
+                  fill="#F0F0F0"
+                  fill-opacity="0.5"
+                />
+                <path
+                  d="M10.075 23.2571H14.703V15.4701C14.703 15.0541 14.729 14.6381 14.859 14.3391C15.197 13.5071 15.951 12.6491 17.238 12.6491C18.915 12.6491 19.578 13.9231 19.578 15.7951V23.2571H24.206V15.2621C24.206 10.9851 21.918 8.99609 18.876 8.99609C16.38 8.99609 15.275 10.3871 14.664 11.3491H14.69V9.32109H10.075C10.127 10.6211 10.075 23.2571 10.075 23.2571Z"
+                  fill="#F0F0F0"
+                  fill-opacity="0.5"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.615 1.30005H8.39805C4.48505 1.30005 1.30005 4.47205 1.30005 8.37205V17.628C1.30005 21.528 4.48505 24.7 8.39805 24.7H17.602C21.528 24.7 24.7001 21.528 24.7001 17.628V8.37205C24.7131 4.47205 21.528 1.30005 17.615 1.30005ZM22.75 18.2C22.75 20.709 20.709 22.75 18.2001 22.75H7.80005C5.29105 22.75 3.25005 20.709 3.25005 18.2V7.80005C3.25005 5.29105 5.29105 3.25005 7.80005 3.25005H18.2001C20.709 3.25005 22.75 5.29105 22.75 7.80005V18.2Z"
+                  fill="#F0F0F0"
+                  fill-opacity="0.5"
+                />
+                <path
+                  d="M19.3311 8.2549C20.1136 8.2549 20.7481 7.62049 20.7481 6.8379C20.7481 6.05531 20.1136 5.4209 19.3311 5.4209C18.5485 5.4209 17.9141 6.05531 17.9141 6.8379C17.9141 7.62049 18.5485 8.2549 19.3311 8.2549Z"
+                  fill="#F0F0F0"
+                  fill-opacity="0.5"
+                />
+                <path
+                  d="M13.039 7.08496C9.72402 7.08496 7.02002 9.76296 7.02002 13.065C7.02002 16.38 9.71102 19.058 13.039 19.058C16.367 19.058 19.058 16.3787 19.058 13.065C19.045 9.76296 16.354 7.08496 13.039 7.08496ZM13.104 16.9C10.946 16.9 9.20402 15.158 9.20402 13.013C9.20402 10.868 10.946 9.12596 13.104 9.12596C15.262 9.12596 17.004 10.868 17.004 13.013C17.004 15.158 15.262 16.9 13.104 16.9Z"
+                  fill="#F0F0F0"
+                  fill-opacity="0.5"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24.7 6.1619C23.8407 6.5376 22.9138 6.7976 21.9453 6.9159C22.9372 6.3179 23.6951 5.3806 24.0539 4.2639C23.127 4.8099 22.1013 5.2116 21.0067 5.4209C20.1305 4.4849 18.8838 3.8999 17.5032 3.8999C14.8499 3.8999 12.7023 6.0579 12.7023 8.7099C12.7023 9.0869 12.7452 9.4496 12.8284 9.8006C8.83355 9.5939 5.29885 7.6946 2.93025 4.7826C2.51685 5.4846 2.28025 6.3179 2.28025 7.2006C2.28025 8.8659 3.12655 10.3349 4.41615 11.1929C3.62705 11.1656 2.88605 10.9576 2.23995 10.5936V10.6456C2.23995 12.9713 3.89615 14.9213 6.09185 15.3659C5.68885 15.4686 5.26375 15.5206 4.82695 15.5206C4.51755 15.5206 4.21855 15.4946 3.92345 15.4439C4.53705 17.3536 6.30765 18.7446 8.40975 18.7836C6.76655 20.0576 4.69565 20.8246 2.44665 20.8246C2.05795 20.8246 1.67705 20.8116 1.30005 20.7596C3.42555 22.1246 5.94885 22.9176 8.66065 22.9176C17.4902 22.9176 22.321 15.5999 22.321 9.2676C22.321 9.0596 22.3158 8.8516 22.3041 8.6436C23.2427 7.9676 24.0552 7.1213 24.7 6.1619Z"
+                  fill="#F0F0F0"
+                  fill-opacity="0.5"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <p class="footer__copy m-0">© 2021 Laneta - Luxury Loyalty</p>
+      </div>
+    </footer>
+
+    <script src="js/smooth-scroll.js"></script>
+    <script src="node_modules/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+    <script src="js/show-password-toggle.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

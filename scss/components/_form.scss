@@ -1,0 +1,32 @@
+.form {
+  margin-top: 40px;
+  padding: 80px;
+  background-color: #f8f8f8;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+
+  svg {
+    border-bottom: 1px solid #b1aeac;
+    height: 100%;
+  }
+}
+
+.input-group {
+  height: 40px;
+  margin-bottom: 40px;
+}
+
+.form input {
+  border: none;
+  border-bottom: 1px solid #b1aeac;
+  background-color: #f8f8f8;
+
+  &::placeholder {
+    color: #999999;
+  }
+
+  &:focus {
+    background-color: #f8f8f8;
+    border-color: #b1aeac;
+    box-shadow: none;
+  }
+}

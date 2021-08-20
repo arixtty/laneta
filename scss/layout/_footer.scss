@@ -1,0 +1,8 @@
+.footer {
+  background: linear-gradient(to right, #1b474d, #2e6971);
+  padding: 40px 0;
+
+  &__copy {
+    color: $white;
+  }
+}

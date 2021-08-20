@@ -1,0 +1,364 @@
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-5,
+.heading-6 {
+  font-family: Italiana, serif;
+  color: #171717;
+  font-weight: 400;
+}
+
+.heading-1 {
+  font-size: 80px;
+}
+
+.heading-2 {
+  font-size: 60px;
+}
+
+.heading-4 {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.heading-5 {
+  font-size: 24px;
+}
+
+.heading-6 {
+  font-size: 32px;
+}
+
+.heading--inverted {
+  color: #f0f0f0;
+}
+
+.container {
+  max-width: 1220px;
+}
+
+.navbar-dark .navbar-toggler {
+  border: none;
+}
+.navbar-dark .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: #b4a186;
+  font-size: 18px;
+  font-weight: 600;
+  width: 265px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0;
+  color: #f0f0f0;
+  text-decoration: none;
+}
+.btn-primary:link, .btn-primary:visited {
+  background-color: #b4a186;
+}
+.btn-primary:hover, .btn-primary:active {
+  background-color: #b2a490;
+  color: #f0f0f0;
+}
+
+.form {
+  margin-top: 40px;
+  padding: 80px;
+  background-color: #f8f8f8;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+}
+.form svg {
+  border-bottom: 1px solid #b1aeac;
+  height: 100%;
+}
+
+.input-group {
+  height: 40px;
+  margin-bottom: 40px;
+}
+
+.form input {
+  border: none;
+  border-bottom: 1px solid #b1aeac;
+  background-color: #f8f8f8;
+}
+.form input::placeholder {
+  color: #999999;
+}
+.form input:focus {
+  background-color: #f8f8f8;
+  border-color: #b1aeac;
+  box-shadow: none;
+}
+
+.carousel-inner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel-caption {
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+.carousel-indicators {
+  position: static;
+  margin: 40px auto;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: auto;
+}
+
+.carousel-control-next-icon {
+  background-image: url("assets/icon-next.svg");
+}
+
+.carousel-control-prev-icon {
+  background-image: url("assets/icon-prev.svg");
+}
+
+.carousel-indicators [data-bs-target] {
+  text-indent: initial;
+  width: auto;
+  height: 100%;
+  font-family: Italiana, serif;
+  font-size: 20px;
+  color: #171717;
+  background-color: transparent;
+  opacity: 1;
+  border-top: none;
+  border-bottom: 2px solid transparent;
+}
+
+.carousel-indicator.active {
+  border-top: none;
+  border-bottom: 2px solid #171717;
+}
+
+.accordion {
+  margin-top: 40px;
+  border-bottom: 1px solid #999999;
+}
+
+.accordion-button::after {
+  background-image: url("/assets/icon-plus.svg");
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("/assets/icon-plus.svg");
+  transform: rotate(45deg);
+}
+
+.accordion-button:not(.collapsed) {
+  color: initial;
+  background-color: initial;
+  border-color: #999999;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  border-color: #999999;
+  box-shadow: none;
+}
+
+.accordion-item {
+  border-bottom: none;
+}
+
+.accordion-button {
+  border-top: 1px solid #999999;
+  padding: 30px 0;
+}
+
+.accordion-body {
+  padding: 30px 0 20px;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.social {
+  list-style: none;
+  width: 180px;
+}
+.social__item {
+  width: 26px;
+  height: 26px;
+  margin: 0 20px;
+}
+.navbar-dark .navbar-toggler {
+  border: none;
+}
+.navbar-dark .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.header {
+  color: #F0F0F0;
+}
+.header__menu-caption {
+  color: #F0F0F0;
+  font-family: Italiana, serif;
+}
+.header__nav-toggler {
+  border: none;
+}
+
+.navbar-caption {
+  font-family: Italiana, serif;
+  font-size: 16px;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("/assets/icon-menu.svg");
+  height: 45px;
+  width: 45px;
+}
+
+.footer {
+  background: linear-gradient(to right, #1b474d, #2e6971);
+  padding: 40px 0;
+}
+.footer__copy {
+  color: #f0f0f0;
+}
+
+.header__offcanvas {
+  max-width: 18.2%;
+  background-color: #1b474d;
+}
+.header__offcanvas-body {
+  max-height: 65%;
+  width: 270px;
+  font-family: Italiana, serif;
+  font-size: 24px;
+  color: #f0f0f0;
+  margin: 0 auto;
+}
+.header__offcanvas-body > ul {
+  padding: 50px 0;
+}
+.header__offcanvas-body > ul:not(:last-child) {
+  border-bottom: 1px solid #e5e5e533;
+}
+
+.hero {
+  background-image: url("/assets/hero.jpeg");
+  background-position: 40vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #1b474d;
+  min-height: 100vh;
+}
+.hero__subheading {
+  color: rgba(240, 240, 240, 0.9);
+  margin-top: 20px;
+  margin-bottom: 76px;
+}
+
+.features {
+  margin: 100px auto;
+}
+
+.categories {
+  margin: 230px auto;
+}
+
+.details {
+  background-color: #eceae8;
+  margin-top: -20%;
+  padding-top: 20%;
+}
+.details .row > * {
+  z-index: 2;
+}
+.details__how {
+  position: relative;
+  height: 650px;
+}
+.details__how-img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  max-width: 49%;
+}
+.details__about {
+  position: relative;
+  padding: 240px 0 120px;
+}
+.details__about p {
+  padding: 0 30px 0;
+}
+.details__about-img-1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  max-width: 40%;
+}
+.details__about-img-2 {
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  z-index: 1;
+  max-width: 20%;
+}
+.details__security {
+  position: relative;
+  padding: 100px 0 100px;
+  background-color: #f2f1f0;
+}
+.details__security h2 {
+  margin-bottom: 115px;
+}
+.details__security h4 {
+  margin-bottom: 16px;
+}
+.details__security h6 {
+  margin-bottom: 20px;
+}
+.details__security p {
+  margin-bottom: 40px;
+}
+.details__security-img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-width: 42%;
+}
+
+.registration {
+  background-image: url("assets/form-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 140px 0;
+}
+.registration__link {
+  color: #171717;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+}
+
+.faq {
+  padding: 100px 0;
+}
+
+/*# sourceMappingURL=style.css.map */

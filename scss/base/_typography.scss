@@ -1,0 +1,41 @@
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+.heading-1,
+.heading-2,
+.heading-3,
+.heading-5,
+.heading-6 {
+  font-family: Italiana, serif;
+  color: $heading-color;
+  font-weight: 400;
+}
+
+.heading-1 {
+  font-size: 80px;
+}
+
+.heading-2 {
+  font-size: 60px;
+}
+
+.heading-4 {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Montserrat, sans-serif;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+.heading-5 {
+  font-size: 24px;
+}
+
+.heading-6 {
+  font-size: 32px;
+}
+
+.heading--inverted {
+  color: $white;
+}

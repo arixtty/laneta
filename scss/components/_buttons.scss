@@ -1,0 +1,25 @@
+.btn-primary {
+  background-color: #b4a186;
+  font-size: 18px;
+  font-weight: 600;
+  width: 265px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0;
+  color: $white;
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    background-color: #b4a186;
+  }
+
+  &:hover,
+  &:active {
+    background-color: #b2a490;
+    color: $white;
+  }
+}
